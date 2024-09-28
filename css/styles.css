@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+article{
+    display: grid;
+    grid-template-areas: 
+    "title title"
+    "text1 photo1"
+    "text2 photo1";
+}
+
+h1{
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 101.38%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+body{
+    font-family: 'Roboto';
+    padding: 4rem;
+}
+
+.photo1{
+    position: relative;
+    width: 390px;
+    margin:0 120px;
+    
+
+}
+
+article p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.down{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top:5rem;
+}
+
+.boxes{
+    width: 20%;
+}
+
+.title{
+    grid-area: title;
+}
+.text1{
+    grid-area: text1;
+}
+.text2{
+    grid-area: text2;
+}
+.photo1{
+    grid-area: photo1;
+}
+
+
+
+@media screen and (max-width:1400px) and (min-width:830px) {
+
+    .photo-div{
+        display: none;
+    }
+    article p{
+        font-size: 14px;
+    }
+    h1{
+        font-size:32px;
+    }
+    .photo1{
+        width: 184px;
+        height: 198px;
+    }   
+
+    .down{
+        justify-content: flex-start;
+        column-gap:60px;
+    }
+
+    .down p{
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width:830px) and (min-width:375px){
+    .photo-div{
+        display: none;
+    }
+    article p{
+        font-size: 12px;
+    }
+    h1{
+        font-size:26px;
+    }
+    article{
+        grid-template-areas:
+        "title title"
+        "text1 text1"
+        "text2 text2"
+        "photo1 photo1";
+    }
+    .photo1{
+        width: 164px;
+        height: 165px;
+        margin:0 auto;
+    }   
+
+    .down{
+        justify-content: flex-start;
+        column-gap:60px;
+        flex-wrap: wrap;
+    }
+    .boxes{
+        width: 40%;
+    }
+    .down p{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
